@@ -1,0 +1,10 @@
+{
+  "name": "mountain-model-generator",
+  "version": "0.1.0",
+  "description": "Generate mountain range 3D models with parameter controls and STL export",
+  "scripts": {
+    "start": "npx http-server public"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
