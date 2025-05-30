@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Model Generator</title>
+  <style>
+    body,html{height:100%;margin:0;display:flex;flex-direction:column;}
+    #viewer{flex:1;}
+    #controls{padding:8px;display:flex;flex-wrap:wrap;background:#f0f0f0;}
+    #controls label{margin-right:8px;}
+  </style>
+</head>
+<body>
+  <canvas id="viewer"></canvas>
+  <div id="controls">
+    <label>Width <input type="range" id="width" min="10" max="200" value="100"></label>
+    <label>Height <input type="range" id="height" min="10" max="200" value="100"></label>
+    <!-- Additional 10 style parameters -->
+    <label>Param1 <input type="range" id="param1" min="0" max="1" step="0.1" value="0.5"></label>
+    <label><input type="checkbox" id="flatBack"> Flat Back</label>
+    <!-- ... params 2-10 ... -->
+    <button id="saveBtn">Save</button>
+    <button id="loadBtn">Load</button>
+    <button id="exportBtn">Export STL</button>
+  </div>
+  <script type="module" src="../src/main.js"></script>
+</body>
+</html>
